@@ -10,6 +10,6 @@ links.forEach(el => {
 })
 
 burger.onclick = () => {
-   document.body.classList.add('noScroll')
+   document.body.classList.toggle('noScroll')
    aside.classList.toggle('active')
 }
