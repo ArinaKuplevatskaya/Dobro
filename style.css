@@ -1,0 +1,203 @@
+*,
+body {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   letter-spacing: 2px;
+}
+html,
+body {
+   scroll-behavior: smooth;
+}
+body {
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+   overflow-x: hidden;
+   font-family: sans-serif;
+}
+body.noScroll {
+   overflow: hidden;
+}
+section {
+   margin-bottom: 64px;
+}
+nav {
+   z-index: 5;
+   position: fixed;
+   width: 100%;
+   background-color: #f40d30;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 24px;
+}
+h1 {
+   font-size: 22px;
+   padding: 16px 0;
+}
+h2 {
+   font-size: 36px;
+   margin-bottom: 55px;
+   padding-top: 90px;
+}
+aside ul li h2 {
+   color: #fff;
+   padding-top: 0;
+   margin-bottom: 20px;
+}
+h3 {
+   font-size: 24px;
+   margin-bottom: 24px;
+}
+h5 {
+   font-size: 20px;
+}
+ul {
+   list-style: none;
+}
+nav ul li {
+   font-weight: bold;
+}
+nav ul li:nth-child(2) {
+   color: #fff;
+   font-size: 24px;
+}
+#aboutEcology ul {
+   display: flex;
+   flex-direction: column;
+   row-gap: 20px;
+}
+#aboutEcology ul li {
+   letter-spacing: 1.2px;
+   font-size: 17px;
+}
+a {
+   color: #fff;
+   font-size: 20px;
+   cursor: pointer;
+   text-decoration: none;
+   transition: color, 0.1s;
+}
+aside ul li a {
+   color: #fff;
+   font-size: 24px;
+}
+ul li a:hover,
+aside ul li a:hover {
+   color: #eaeaea;
+}
+p {
+   letter-spacing: 1.2px;
+   line-height: 1.4;
+   font-size: 17px;
+}
+img {
+   margin-top: 45px;
+   width: 100%;
+}
+main {
+   z-index: 1;
+   max-width: 1070px;
+   padding: 0 15px;
+   flex: 1;
+}
+aside ul {
+   font-weight: bold;
+   padding: 100px 20px;
+   position: fixed;
+   width: 100%;
+   min-height: 100vh;
+   z-index: 3;
+   top: 0;
+   right: -100%;
+   transition: right 0.1s;
+   background-color: #f40d30;
+   display: flex;
+   flex-direction: column;
+   row-gap: 28px;
+   text-align: right;
+}
+iframe {
+   width: 100%;
+}
+footer {
+   z-index: 3;
+   color: #fff;
+   padding: 28px 22px;
+   background-color: #f40d30;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.navLogo,
+.burger {
+   z-index: 5;
+}
+.menu {
+   display: none;
+}
+aside ul.active {
+   right: 0;
+}
+.burger svg {
+   pointer-events: none;
+   width: 32px;
+}
+.burger svg path {
+   fill: #fff;
+}
+
+@media (min-width: 768px) {
+   h1 {
+      font-size: 36px;
+      padding: 18px 16px;
+      background-color: #f66278;
+   }
+   h2 {
+      font-size: 44px;
+      padding-top: 120px;
+   }
+   h3 {
+      font-size: 28px;
+   }
+   main {
+      padding: 0 40px;
+   }
+   aside ul {
+      right: 0;
+      padding-top: 0;
+      background-color: transparent;
+      min-height: auto;
+      text-align: left;
+      width: auto;
+   }
+   aside ul li h2 {
+      color: #222;
+      padding-top: 120px;
+      margin-bottom: 5px;
+      font-size: 48px;
+   }
+   aside ul li a {
+      font-size: 32px;
+      color: #222;
+   }
+   aside ul li a:hover {
+      color: #666;
+   }
+   iframe {
+      width: 560px;
+   }
+   .burger {
+      display: none;
+   }
+   .menu {
+      padding: 0;
+      align-items: center;
+      column-gap: 16px;
+      width: auto;
+      display: flex;
+      flex-direction: row;
+      position: static;
+   }
+}
